@@ -1,0 +1,47 @@
+$color-white: #ffffff;
+$color-black: #000000;
+$color-red: #ff0000	;
+
+@font-face {
+	font-family: DINProRegular;
+	src: url(https://cdn.nebe.app/demo/fonts/DINPro-Regular.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: DINProBold;
+	src: url(https://cdn.nebe.app/demo/fonts/DINPro-Bold.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: CallingCodeBold;
+	src: url(https://cdn.nebe.app/demo/fonts/callingcode-bold.otf) format("opentype");
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+	position: relative;
+	display: block;
+	font-family: 'Roboto', sans-serif;
+	color: $color-white;
+}
+
+a {
+	display: inline-block;
+}
+
+.product {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}

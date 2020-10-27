@@ -1,0 +1,58 @@
+{
+	"background": {
+		"label": "Background CSS",
+		"description": "Příklad: rgba(106,228,168,1)",
+		"value": "linear-gradient(180deg, rgba(106,228,168,1) 0%, rgba(195,244,220,1) 100%)",
+		"prefill": true
+	},
+	"headline": {
+		"label": "Nadpis",
+		"value": "Kitty financial services",
+		"prefill": true
+	},
+	"model": {
+		"label": "Model",
+		"value": "Maneki-neko cat",
+		"prefill": true
+	},
+	"badge": {
+		"label": "Zobrazit badge",
+		"value": "Ano",
+		"type": "enum",
+		"options": [
+			"Ano",
+			"Ne"
+		],
+		"prefill": true
+	},
+	"image_link": {
+		"label": "URL obrázku",
+		"type": "url",
+		"value": "https://cdn.nebe.app/demo/print/product.svg"
+	},
+	"price": {
+		"label": "Cena",
+		"value": "80"
+	},
+	"countdown_text": {
+		"label": "Text: Kdy končí nabídka",
+		"value": "Offer expires on",
+		"prefill": true
+	},
+	"countdown_date": {
+		"label": "Hodnota: Kdy končí nabídka",
+		"description": "Javascript formát, např. Dec 30, 2020 00:00:00",
+		"value": "Dec 30, 2020 00:00:00",
+		"prefill": true
+	},
+	"cta": {
+		"label": "Text CTA tlačítka",
+		"value": "Buy",
+		"prefill": true
+	},
+	"link": {
+		"label": "Odkaz",
+		"value": "https://www.nebe.app/app",
+		"prefill": true
+	}
+}

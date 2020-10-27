@@ -1,0 +1,171 @@
+@import '../assets/main';
+
+$width: 300px;
+$height: 600px;
+
+.wrapper {
+	width: $width;
+	height: $height;
+	overflow: hidden;
+	font-family: DINProBold, sans-serif;
+
+	&:hover {
+		.cta {
+			transform: scale(1.1);
+		}
+	}
+}
+
+.background {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: linear-gradient(180deg, rgba(106,228,168,1) 0%, rgba(195,244,220,1) 100%);
+}
+
+.content {
+	width: 286px;
+	position: absolute;
+	top: 5px;
+	left: 6px;
+	height: 190px;
+	text-align: center;
+	padding: 0 20px;
+}
+
+.headline {
+	max-height: 2.4em;
+	margin-top: 20px;
+	font-family: CallingCodeBold, sans-serif;
+	color: #22a875;
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 1.2;
+	overflow: hidden;
+}
+
+.subheadline {
+	font-family: DINProBold, sans-serif;
+	color: #4f46de;
+	font-size: 22px;
+	font-weight: 400;
+	margin-top: 30px;
+}
+
+.product-wrapper {
+	position: relative;
+	top: 180px;
+	left: calc((300px - 150px) / 2);
+	width: 150px;
+	height: 160px;
+}
+
+.product {
+	position: absolute;
+	top: 5px;
+	width: 100%;
+	height: 100%;
+
+	&__price {
+		position: absolute;
+		top: 340px;
+		right: 0;
+		font-family: DINProBold, sans-serif;
+		font-size: 27px;
+		font-weight: 800;
+		line-height: 1;
+		background-image: url("../assets/flag-orange.svg");
+		background-size: cover;
+		background-position: left;
+		background-repeat: no-repeat;
+		padding: 10px 10px 10px 30px;
+		color: $color-white;
+		overflow: hidden;
+		white-space: nowrap;
+		backface-visibility: hidden;
+	}
+
+	&__badge {
+		position: absolute;
+		top: 20px;
+		left: -50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+		background: url("badge.png");
+		background-size: contain;
+		overflow: hidden;
+		padding: 25px;
+		text-align: center;
+		z-index: 3;
+
+		&-text {
+			font-size: 12px;
+			font-weight: 700;
+			letter-spacing: -0.025em;
+			line-height: 1.2;
+			text-transform: uppercase;
+			color: $color-white;
+		}
+	}
+}
+
+.countdown {
+	position: absolute;
+	top: 405px;
+	left: calc((300px - 230px) / 2);
+	min-width: 230px;
+	color: #1c0c3e;
+	font-family: CallingCodeBold, sans-serif;
+	text-align: center;
+
+	&__description {
+		font-size: 18px;
+		font-weight: bold;
+	}
+
+	&__timer {
+		display: inline-block;
+		margin-top: 5px;
+		min-width: 220px;
+		font-size: 24px;
+
+		> span {
+			font-size: 16px;
+			margin-right: 8px;
+		}
+	}
+}
+
+.cta {
+	position: absolute;
+	top: 490px;
+	left: calc((300px - 160px) / 2);
+	width: 160px;
+	z-index: 1;
+	transition: transform 0.4s ease-in-out;
+	will-change: transform;
+
+	&__inner {
+		position: relative;
+		width: 100%;
+		height: 48px;
+		background-color: #4f46de;
+		display: inline-block;
+		text-align: center;
+		line-height: 48px;
+		font-weight: 700;
+		color: $color-white;
+	}
+}
+
+.logo {
+	position: absolute;
+	bottom: 10px;
+	right: 20px;
+}
